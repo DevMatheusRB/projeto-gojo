@@ -83,8 +83,9 @@ nav > a:hover {
 
 main {
     margin: auto;
-    max-width: 700px;
-    background-color: white;
+    max-width: 800px;
+    min-width: 400px;
+    background-color: rgb(246, 217, 252);
     border: 2px solid black;
     border-bottom-left-radius: 7px;
     border-bottom-right-radius: 7px;
@@ -101,4 +102,16 @@ main > p {
     text-indent: 30px;
     line-height: 32px;
     padding: 20px;
+}
+
+main > img.especial {
+    width: 250px;
+    display: block;
+    margin: auto;
+}
+
+main > img {
+    width: 500px;
+    display: block;
+    margin: auto;
 }
