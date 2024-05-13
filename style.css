@@ -1,0 +1,104 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Nexa';
+    src: url('fonts/Nexa-Heavy.ttf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Heavitas';
+    src: url('fonts/Heavitas.ttf') format('truetype');
+    font-weight: normal;
+}
+
+:root {
+    ---cor1: #C62DEA;
+    ---cor2: #A945C0;
+    ---cor3: #894E96;
+    ---cor4: #654A6B;
+    ---cor5: #3F3741;
+    ---cor6: #312833;
+
+    ---fonte1: 'Nexa';
+    ---fonte2: 'Heavitas';
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-image: url('imagens/gojo3.webp');
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+header {
+    background-color: var(---cor3);
+    background-image: linear-gradient(to right, rgb(97, 4, 4), rgb(22, 67, 117) 85%);
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    box-shadow: 1px 1px 19px rgba(0, 0, 0, 0.267);
+}
+
+header > h1 {
+    font-family: var(---fonte2);
+    text-align: center;
+    color: white;
+    font-weight: normal;    
+    padding: 40px;
+    padding-bottom: 20px;
+    font-size: 8vh;
+    text-shadow: 1px 1px 7px black;
+}
+
+header > p {
+    font-family: var(---fonte1);
+    text-align: center;
+    color: white;
+    font-weight: normal;    
+    padding: 20px;
+    padding-top: 0px;
+    font-size: 15px;
+    text-shadow: 1px 1px 7px black;
+}
+
+nav > a {
+    font-family: 'Heavitas';
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    display: inline-block;
+}
+
+nav > a:hover {
+    background-color: rgb(22, 67, 117);
+    color: rgb(97, 4, 4);
+    transition-duration: 0.5s;
+    border-radius: 7px;
+}
+
+main {
+    margin: auto;
+    max-width: 700px;
+    background-color: white;
+    border: 2px solid black;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    box-shadow: 1px 1px 19px rgba(0, 0, 0, 0.267);
+}
+
+main > h1 {
+    font-family: var(---fonte1);
+    padding: 20px;
+}
+
+main > p {
+    font-family: Arial, Helvetica, sans-serif;
+    text-indent: 30px;
+    line-height: 32px;
+    padding: 20px;
+}
